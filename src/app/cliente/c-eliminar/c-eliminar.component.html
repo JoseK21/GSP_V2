@@ -1,0 +1,26 @@
+<nav class="navbar navbar-light color">
+  <a class="navbar-brand">
+    <img src="assets/f.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    <span class="colorWhite">  Cliente : Eliminar </span>
+  </a>
+  <a class="colorWhite" routerLink="/gestion">Salir</a>
+</nav>
+<div class="container ">
+  <div class="container ">
+    <br><br>
+    <form class="form-inline my-2 my-lg-0 ">
+      <input #ID class="form-control mr-sm-2 px-4 " type="search" placeholder="Cedula" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="button" button (click)="getCliente(ID.value)"
+      >Search</button>
+    </form>
+    <br><br>
+    <form>
+      <div class="form-group">
+        <label>Nombre completo</label>
+        <input type="text" class="form-control" id="ce-nombre" placeholder="{{name}} {{lastName}}" disabled>
+      </div>
+    </form>
+    <br>
+    <button type="button" class="btn btn-outline-primary btn-block align-bottom">Eliminar</button>
+    <br>
+  </div>

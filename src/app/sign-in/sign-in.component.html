@@ -1,0 +1,103 @@
+<app-titulo></app-titulo>
+
+
+<div class="container">
+<h4><strong>Sing In</strong></h4>
+<form>
+  <div class="form-group">
+    <label>Numero de Cédula</label>
+    <input #NC type="text" class="form-control" id="cc-numeroCedula" placeholder="301110555">
+  </div>
+
+  <div class="form-group">
+    <label>Nombre</label>
+    <input #N type="text" class="form-control" id="cc-nombre" placeholder="">
+  </div>
+
+  <div class="form-group">
+    <label>Apellido</label>
+    <input #A type="text" class="form-control" id="cc-apellido" placeholder="">
+  </div>
+
+  <div class="form-group">
+    <label>Lugar de Residencia</label>
+    <input #LR type="text" class="form-control" id="cc-lugarResidencia" placeholder="">
+  </div>
+
+  <div class="form-group">
+    <label>Fecha de nacimiento</label>
+    <input #FN type="date" class="form-control" id="cc-fechaNacimiento" placeholder="">
+  </div>
+
+  <div class="form-group">
+    <label>Telefono</label>
+    <input #T type="text" class="form-control" id="cc-telefono" placeholder="########">
+  </div>
+
+
+  <div class="form-group">
+    <label>Breve historial de los padecimientos</label>
+    <textarea #BH class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+<div class="form-group">
+  <label>Contraseña</label>
+  <input #C type="password" class="form-control" >
+</div>
+
+<div class="form-group">
+  <label >Confirme Contraseña</label>
+  <input #CC type="password" class="form-control">
+</div>
+
+
+  <div class="form-group">
+    <label>Farmacia</label>
+    <div>
+      <div class="form-check-inline">
+        <input #radioPharmacy1 class="form-check-input" type="radio" name="ex1" value="option1" (click)="setFarmacia('Phischel')">
+        <label class="form-check-label">Phischel</label>
+      </div>
+      <div class="form-check-inline">
+        <input #radioPharmacy2 class="form-check-input" type="radio" name="ex1" value="option2" (click)="setFarmacia('BombaTica')">
+        <label class="form-check-label">BombaTica</label>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="form-group">
+    <label>Rol</label>
+    <div>
+      <div class="form-check-inline">
+        <input #radioGerente class="form-check-input" type="radio" name="e1" value="option1" (click)="setRol('Gerente')">
+        <label class="form-check-label">Gerente</label>
+      </div>
+      <div class="form-check-inline">
+        <input #radioDependiente class="form-check-input" type="radio" name="e1" value="option2" (click)="setRol('Dependiente')">
+        <label class="form-check-label">Dependiente</label>
+      </div>
+      <div class="form-check-inline">
+        <input #radioFarmaceutico class="form-check-input" type="radio" name="e1" value="option3" (click)="setRol('Farmacéuticos')">
+        <label class="form-check-label">Farmacéuticos</label>
+      </div>
+    </div>
+  </div>
+  
+
+  <button type="button" class="btn btn-success btn-block" button (click)="createCliente(NC.value,N.value,A.value,LR.value,FN.value,T.value,BH.value, CC.value, farmacia ,rol )">Create</button>
+  
+  <br>
+  
+  <button type="button" class="btn btn-outline-secondary btn-block " routerLink="/">Atras</button>  
+  
+  <br>
+
+  
+
+
+
+</form>
+
+</div>

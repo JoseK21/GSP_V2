@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+nav{
+  background: -moz-linear-gradient(DeepSkyBlue,Black);
+  background: -webkit-linear-gradient(DeepSkyBlue,Black);
+}
+
+div.degradado{
+  background: -moz-linear-gradient(DeepSkyBlue,Black);
+  background: -webkit-linear-gradient(DeepSkyBlue,Black);
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.colorSpanExit{
+  color: white;
+}
+
+.colorWhite{
+  color: white;
+}

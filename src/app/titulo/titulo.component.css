@@ -1,0 +1,21 @@
+.r1{
+    background-color: #69B2C9;
+    height: 150px;
+}
+
+.r2{
+    background-color: rgb(101, 147, 163);
+}
+h1.colorWhite{
+    color: white;
+    font-size: 50px;
+}
+
+
+.jumbotron{
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+

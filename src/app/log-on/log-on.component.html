@@ -1,0 +1,60 @@
+
+<div class="container-fluid">
+
+    <h4><strong>Sing In</strong></h4>
+    <form>
+        <div class="form-group">
+          <label>Numero de Cédula</label>
+          <input #NC type="text" class="form-control" id="cc-numeroCedula" placeholder="301110555">
+        </div>
+    
+        <div class="form-group">
+          <label>Nombre</label>
+          <input #N type="text" class="form-control" id="cc-nombre" placeholder="">
+        </div>
+    
+        <div class="form-group">
+          <label>Apellido</label>
+          <input #A type="text" class="form-control" id="cc-apellido" placeholder="">
+        </div>
+    
+        <div class="form-group">
+          <label>Lugar de Residencia</label>
+          <input #LR type="text" class="form-control" id="cc-lugarResidencia" placeholder="">
+        </div>
+    
+        <div class="form-group">
+          <label>Fecha de nacimiento</label>
+          <input #FN type="date" class="form-control" id="cc-fechaNacimiento" placeholder="">
+        </div>
+    
+        <div class="form-group">
+          <label>Telefono</label>
+          <input #T type="text" class="form-control" id="cc-telefono" placeholder="########">
+        </div>
+    
+    
+        <div class="form-group">
+          <label>Breve historial de los padecimientos</label>
+          <textarea #BH class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+    
+      <div class="form-group">
+        <label>Contraseña</label>
+        <input #C type="password" class="form-control" >
+      </div>
+    
+      <div class="form-group">
+        <label >Confirme Contraseña</label>
+        <input #CC type="password" class="form-control">
+      </div>
+    
+    
+      <button type="button" class="btn btn-success btn-block"
+              button (click)="createCliente(NC.value,N.value,A.value,LR.value,FN.value,T.value,BH.value, CC.value, 'all','client')">Create</button>
+      <br>
+      <button type="button" class="btn btn-success btn-block"
+              button (click)="deleteCliente(T.value)">Delete</button>
+      <br>
+    </form>
+    </div>
